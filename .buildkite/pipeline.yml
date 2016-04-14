@@ -3,6 +3,8 @@ steps:
     command: "make clean-machine"
   - name: ":baby:"
     command: "make machine"
+  - name: ":allthethings:"
+    command: "make hello"
   - name: ":notes:"
     command: "make compose"
     
