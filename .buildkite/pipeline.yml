@@ -1,5 +1,9 @@
 steps:
   - name: ":beer:"
     command: "make clean-machine"
+  - name: ":baby:"
+    command: "make machine"
+    
+    
   # - name: ":packer:"
   #   command: "packer build"
