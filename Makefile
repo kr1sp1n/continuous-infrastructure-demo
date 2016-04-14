@@ -10,5 +10,9 @@ machine:
 	docker-machine --debug create --driver virtualbox test
 	eval "$(docker-machine env test)"
 
+compose       : ## Use docker-compose to pull and build new images and containers
+compose:
+	docker-compose -p demo up -d
+
 help          : ## Show this help
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
