@@ -12,6 +12,7 @@ machine:
 
 hello         : ## git clone hello service
 hello:
+	rm -rf build/hello
 	git clone git@github.com:kr1sp1n/service-hello.git build/hello
 
 compose       : ## Use docker-compose to pull and build new images and containers
