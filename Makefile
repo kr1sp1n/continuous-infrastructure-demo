@@ -10,6 +10,10 @@ machine:
 	docker-machine --debug create --driver virtualbox test
 	eval "$(docker-machine env test)"
 
+hello         : ## git clone hello service
+hello:
+	git clone git@github.com:kr1sp1n/service-hello.git build/hello
+
 compose       : ## Use docker-compose to pull and build new images and containers
 compose:
 	docker-compose -p demo up -d
