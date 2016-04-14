@@ -10,7 +10,7 @@ steps:
   - name: ":whale:"
     command: "docker-machine ls && docker images && docker ps -a"
   - name: ":metal"
-    command: 'echo "$(docker-machine ip test) api.xxx.com" | sudo tee --append /etc/hosts
+    command: 'echo "$(docker-machine ip test) api.xxx.com" | sudo tee --append /etc/hosts'
   - name: ":sleeping:"
     command: "sleep 9999999999"
     
