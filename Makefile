@@ -2,8 +2,8 @@
 
 clean-machine : ## Clean up any previous machine failures
 clean-machine:
-	docker-machine stop test && \
-	docker-machine rm --force test
+	docker-machine stop test || echo "nothing to stop" && \
+	docker-machine rm --force test || echo "nothing to remove"
 
 machine       : ## Use docker-machine to create and configure 'test' environment
 machine:
