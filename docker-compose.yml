@@ -14,6 +14,7 @@ services:
       - graphite
     expose:
       - "8580"
+    command: npm start
 
   graphite:
     image: hopsoft/graphite-statsd:latest
