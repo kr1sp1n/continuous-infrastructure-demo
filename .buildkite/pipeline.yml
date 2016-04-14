@@ -7,6 +7,10 @@ steps:
     command: "make hello"
   - name: ":notes:"
     command: "make compose"
+  - name: ":whale:"
+    command: "docker-machine ls && docker images && docker ps -a"
+  - name: ":sleeping:"
+    command: "sleep 9999999999"
     
   # - name: ":packer:"
   #   command: "packer build"
