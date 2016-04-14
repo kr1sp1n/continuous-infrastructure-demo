@@ -1,0 +1,5 @@
+services:
+  _pattern:
+    repo: git://github.com/<user>/<project>.git#<branch>
+  hello:
+    repo: git@github.com:kr1sp1n/service-hello.git
