@@ -3,7 +3,8 @@ steps:
     command: "make clean-machine"
   - name: ":baby:"
     command: "make machine"
-    
+  - name: ":notes:"
+    command: "make compose"
     
   # - name: ":packer:"
   #   command: "packer build"
